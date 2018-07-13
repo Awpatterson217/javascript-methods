@@ -71,6 +71,7 @@ const pipe = (...methods) => {
 const inherit = (base, ...constructors) => {
   constructors.forEach(fn => assign(base.prototype, fn.prototype));
 }
+
 const mix = (base = {}, ...mixins) => {
   mixins.forEach(mixin => assign(base, mixin));
 }
